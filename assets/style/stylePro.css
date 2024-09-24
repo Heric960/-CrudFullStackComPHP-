@@ -1,0 +1,85 @@
+.form-container {
+    width: 100%; 
+    max-width: 400px; 
+    margin: 50px auto; 
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.product-list {
+    margin: 20px auto;
+    width: 100%; 
+    max-width: 400px; 
+    background-color: #fff; 
+    border-radius: 8px; 
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+h2 {
+    text-align: center; 
+    color: #333; 
+}
+
+.form-group {
+    margin-bottom: 15px; 
+}
+
+label {
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: bold; 
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    font-size: 16px; 
+}
+
+button {
+    width: 100%; 
+    padding: 10px;
+    background-color: #007BFF; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s ease; 
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+.product-list ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.product-list ul li {
+    padding: 10px; 
+    border-bottom: 1px solid #ccc; 
+    transition: background-color 0.3s; 
+}
+
+.product-list ul li:hover {
+    background-color: #f0f0f0; 
+}
+
+.product-list ul li:last-child {
+    border-bottom: none; 
+}
+
+
+.product-list ul li.selected {
+    background-color: #007BFF; 
+    color: white; 
+}
+

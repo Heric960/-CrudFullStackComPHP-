@@ -1,0 +1,41 @@
+<!-- basket.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style/style.css"> <!-- Verifique o caminho -->
+    <link rel="stylesheet" href="../assets/style/styleBasket.css"> <!-- CSS específico para a cesta -->
+    <title>Cesta de Produtos</title>
+</head>
+<body>
+    <div id="injecao"></div> <!-- Sidebar aqui -->
+    <main>
+        <div class="basket-container">
+            <h2>Cesta de Produtos</h2>
+            <form id="basketForm">
+                <div class="basket-item">
+                    <label for="productName">Nome do Produto:</label>
+                    <input type="text" id="productName" name="productName" required>
+                </div>
+                <div class="basket-item">
+                    <label for="productQuantity">Quantidade:</label>
+                    <input type="number" id="productQuantity" name="productQuantity" required min="1">
+                </div>
+                <div class="action-buttons">
+                    <button type="submit">Adicionar à Cesta</button>
+                </div>
+            </form>
+            
+            <div class="basket-list">
+                <h2>Lista de Produtos na Cesta</h2>
+                <ul id="basketUl">
+                    <!-- Produtos na cesta serão exibidos aqui -->
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="../assets/scripts/script.js"></script>
+    <script src="../modules/sidebar.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style/style.css"> <!-- Verifique o caminho -->
+    <link rel="stylesheet" href="../assets/style/stylePro.css"> <!-- Verifique o caminho -->
+    <title>Cadastro de Produtos</title>
+</head>
+<body>
+    <div id="injecao"></div> <!-- Sidebar aqui -->
+    <main>
+        <div class="form-container">
+            <h2>Cadastro de Produto</h2>
+            <form id="productForm">
+                <div class="form-group">
+                    <label for="productName">Nome do Produto:</label>
+                    <input type="text" id="productName" name="productName" required>
+                </div>
+                <div class="form-group">
+                    <label for="productPrice">Preço:</label>
+                    <input type="text" id="productPrice" name="productPrice" required>
+                </div>
+                <button type="submit" onclick="CadastrarProdutos(event)">Adicionar Produto</button>
+            </form>
+        </div>
+
+        <div class="product-list">
+            <h2>Lista de Produtos</h2>
+            <ul id="productsUl">
+                <!-- Produtos serão exibidos aqui -->
+            </ul>
+        </div>
+
+        <div class="action-buttons">
+            <button id="deleteProduct" onclick="DeletarProduto()">Deletar Produto Selecionado</button>
+        </div>
+    </main>
+    <script src="../assets/scripts/script.js"></script> 
+    <script src="../modules/sidebar.js"></script>
+</body>
+</html>
